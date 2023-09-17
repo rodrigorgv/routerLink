@@ -1,0 +1,22 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Id</th>
+      <th scope="col">Razon Social</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">Nit</th>
+      <th scope="col">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let proveedores of proveedores; let i = index">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ proveedores.id }}</td>
+      <td>{{ proveedores.razonSocial }}</td>
+      <td>{{ proveedores.direccion }}</td>
+      <td>{{ proveedores.nit }}</td>
+      <td>{{ proveedores.estado }}</td>
+    </tr>
+  </tbody>
+</table>
